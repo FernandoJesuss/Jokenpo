@@ -38,8 +38,8 @@ const playTheGame = (human, machine) => {
 }
 
 const displayChoices = (human, machine) => {
-    humanImg.src = `./src/${getImageName(human)}`; // Atualiza a imagem da escolha do jogador
-    machineImg.src = `./src/${getImageName(machine)}`; // Atualiza a imagem da escolha da máquina
+    humanImg.src = `./src/img/${getImageName(human)}`; // Atualiza a imagem da escolha do jogador
+    machineImg.src = `./src/img/${getImageName(machine)}`; // Atualiza a imagem da escolha da máquina
 }
 
 const getImageName = (choice) => {
