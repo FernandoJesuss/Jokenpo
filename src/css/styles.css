@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6a0dad;
+    color: white;
+    flex-direction: column;
+
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+
+}
+
+h1 {
+    margin: 0.5em;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff007f, #ffb200, #00ff7f, #007fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 5s ease infinite;
+    background-size: 400% 400%;
+
+}
+
+h2 {
+    font-size: 2em;
+    letter-spacing: 2px;
+
+}
+
+.result {
+    position: relative;
+    font-size: 24px;
+    top: 50px;
+    letter-spacing: 2px;
+    
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 45px;
+    border-radius: 10px;
+
+}
+
+#human-score,
+#machine-score {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    width: 80vh;
+    gap: 10%;
+    cursor: pointer;
+
+}
+
+.jk {
+    width: 14vh;
+    margin: 10px -28px;
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+    filter: drop-shadow(2px 20px 10px #02e702);
+    transition: transform 0.3s;
+
+}
+
+.jk:hover {
+    transform: scale(1.2) rotateX(20deg) rotateY(20deg);
+
+}
+
+.jka {
+    width: 14vh;
+    margin: 10px -28px;
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+    filter: drop-shadow(2px 20px 10px #0ad4d4);
+    transition: transform 0.3s;
+
+}
+
+.jka:hover {
+    transform: scale(1.2) rotateX(20deg) rotateY(20deg);
+
+}
+
+.jkv {
+    width: 14vh;
+    margin: 10px -28px;
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+    filter: drop-shadow(2px 20px 10px #d40acd);
+    transition: transform 0.3s;
+
+}
+
+.jkv:hover {
+    transform: scale(1.2) rotateX(20deg) rotateY(20deg);
+
+}
+
+.choice {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+
+}
+
+.selected-choices {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 280px;
+
+}
+
+.selected-choices div {
+    text-align: center;
+
+}
+
+.selected-choices img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 60rem;
+    position: fixed;
+    left: 110px;
+
+}
+
+.images img {
+    width: 180%;
+    height: 180%;
+
+}
+
+.emo {
+    position: relative;
+    top: 8rem;
+    left: 20px;
+
+
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #ffd700;
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+
+}
+
+
+/* Media Queries para Responsividade */
+
+@media screen and (max-width: 1500px) {
+
+    .game-container {
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+    }
+
+    h1 {
+
+        letter-spacing: 2px;
+        font-size: 60px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff007f, #ffb200, #00ff7f, #007fff);
+        background-clip: text; 
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradient-animation 5s ease infinite;
+        background-size: 400% 400%;
+
+    }
+
+    h2 {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+
+    .result {
+        position: relative;
+        font-size: 24px;
+        top: 0;
+        letter-spacing: 2px;
+    }
+
+    .scores {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 60px;
+        border-radius: 10px;
+
+    }
+
+    /*Altera o placar*/
+    #human-score,
+    #machine-score {
+        font-size: 50px;
+    }
+
+    .choice {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    /*Altera as tres mãos*/
+    .choices {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        position: relative;
+        left: 1.5rem;
+        top: 16rem;
+
+    }
+
+    /*Altera os dois elementos sua escolha e escolha da maquina*/
+    .selected-choices {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 2rem;
+        margin-top: 20px;
+
+    }
+
+    .selected-choices div {
+        text-align: center;
+
+    }
+
+    .selected-choices img {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+
+    }
+
+    .emo {
+        display: none;
+        position: relative;
+        top: 4rem;
+        left: 55rem;
+
+    }
+
+    /*Altera as img pedra, papel, esoura*/
+    .jk,
+    .jka,
+    .jkv {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        width: 11vh;
+        left: 0.5rem;
+
+    }
+
+    .images {
+        flex-direction: column;
+        width: 12%;
+        height: 10%;
+
+    }
+
+    .images img {
+        display: none;
+    }
+
+    button,
+    .bto {
+
+        position: relative;
+        top: 15rem;
+        border-radius: 25px;
+
+    }
+
+    button,
+    .bto:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+/* Efeito de trocar as cores no titulo Jokenpô*/
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+
+    /* 
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #human-score,
+    #machine-score {
+        font-size: 40px;
+    }
+
+    .jk, .jka, .jkv {
+        width: 15vh;
+    }
+
+    .choices {
+        flex-direction: column; 
+    }
+
+    .images {
+        flex-direction: column; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    #human-score,
+    #machine-score {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+
+    .images img {
+        width: 70%; 
+    }
+} */
+}
