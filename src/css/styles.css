@@ -344,29 +344,17 @@ button:hover {
 
 }
 
-/* Efeito de trocar as cores no titulo Jokenpô*/
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 
 
-    /* 
+/*768*/
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5em;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     #human-score,
@@ -387,26 +375,135 @@ button:hover {
     }
 }
 
+/*480*/
+
 @media screen and (max-width: 480px) {
-    h1 {
-        font-size: 2em;
+    .result {
+        position: relative;
+        font-size: 24px;
+        top: 0;
+        letter-spacing: 2px;
     }
 
-    h2 {
-        font-size: 1.2em;
+    .scores {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 60px;
+        border-radius: 10px;
+
     }
 
+    /*Altera o placar*/
     #human-score,
     #machine-score {
-        font-size: 30px;
+        font-size: 35px;
+        position: relative;
+top: -1.3em;
+
+
+
     }
 
-    button {
-        font-size: 1.2em;
+    .choice {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    /*Altera as tres mãos*/
+    .choices {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        position: relative;
+        left: 1.5rem;
+        top: 10rem;
+
+    }
+
+    /*Altera os dois elementos sua escolha e escolha da maquina*/
+    .selected-choices {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: -4rem;
+        margin-top: 20px;
+
+    }
+
+    .selected-choices div {
+        text-align: center;
+
+    }
+
+    .selected-choices img {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+
+    }
+
+    .emo {
+        display: none;
+        position: relative;
+        top: 4rem;
+        left: 55rem;
+
+    }
+
+    /*Altera as img pedra, papel, esoura*/
+    .jk,
+    .jka,
+    .jkv {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        width: 11vh;
+        left: 0.5rem;
+
+    }
+
+    .images {
+        flex-direction: column;
+        width: 12%;
+        height: 10%;
+
     }
 
     .images img {
-        width: 70%; 
+        display: none;
     }
-} */
+
+    button,
+    .bto {
+
+        position: relative;
+        top: 8rem;
+        border-radius: 25px;
+
+    }
+
+    button,
+    .bto:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+
+/* Efeito de trocar as cores no titulo Jokenpô*/
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
 }
