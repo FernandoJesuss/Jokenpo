@@ -38,8 +38,8 @@ const playTheGame = (human, machine) => {
 }
 
 const displayChoices = (human, machine) => {
-    humanImg.src = `./img/${getImageName(human)}`; // Atualiza a imagem da escolha do jogador
-    machineImg.src = `./img/${getImageName(machine)}`; // Atualiza a imagem da escolha da máquina
+    humanImg.src = `./src/${getImageName(human)}`; // Atualiza a imagem da escolha do jogador
+    machineImg.src = `./src/${getImageName(machine)}`; // Atualiza a imagem da escolha da máquina
 }
 
 const getImageName = (choice) => {
@@ -61,6 +61,6 @@ const resetGame = () => {
     humanScore.innerHTML = humanScoreNumber;
     machineScore.innerHTML = machineScoreNumber;
     result.innerHTML = '';
-    humanImg.src = './img/giragira1.gif'; // Imagem padrão
-    machineImg.src = './img/giragira1.gif'; // Imagem padrão
+    humanImg.src = './src/img/giragira1.gif'; // Imagem padrão
+    machineImg.src = './src/img/giragira1.gif'; // Imagem padrão
 }
