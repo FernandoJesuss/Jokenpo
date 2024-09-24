@@ -344,48 +344,7 @@ button:hover {
 
 }
 
-
-
-/*768*/
-
-@media screen and (max-width: 768px) {
-
-
-
-
-
-
-
-    
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    #human-score,
-    #machine-score {
-        font-size: 40px;
-    }
-
-    .jk,
-    .jka,
-    .jkv {
-        width: 15vh;
-    }
-
-    .choices {
-        flex-direction: column;
-    }
-
-    .images {
-        flex-direction: column;
-    }
-}
-
-/*480*/
+/*Media screen 480*/
 
 @media screen and (max-width: 480px) {
     .result {
@@ -417,7 +376,6 @@ button:hover {
         display: flex;
         margin: 0 auto;
         width: 100%;
-        
 
     }
 
@@ -425,15 +383,11 @@ button:hover {
     .choices {
         width: 100%;
         display: grid;
-        /* grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); */
         position: relative;
         left: .2rem;
         top: 15rem;
-
-
-        -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em WebKit */
-        outline: none; /* Remove o contorno ao focar */
-        
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
 
     }
 
@@ -444,13 +398,11 @@ button:hover {
         position: relative;
         top: -4rem;
         margin-top: 20px;
-        
 
     }
 
     .selected-choices div {
         text-align: center;
-        
 
     }
 
@@ -474,7 +426,6 @@ button:hover {
     .jka,
     .jkv {
         display: grid;
-        /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
         width: 11vh;
         left: 1.9rem;
         top: 4px;
@@ -498,17 +449,12 @@ button:hover {
         position: relative;
         top: 8rem;
         border-radius: 25px;
-
-        -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em WebKit */
-        outline: none; /* Remove o contorno ao focar */
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
 
     }
 
 }
-
-
-
-
 
 /* Efeito de trocar as cores no titulo Jokenpô*/
 @keyframes gradient-animation {
