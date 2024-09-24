@@ -349,6 +349,14 @@ button:hover {
 /*768*/
 
 @media screen and (max-width: 768px) {
+
+
+
+
+
+
+
+    
     h1 {
         font-size: 2.5em;
     }
@@ -419,8 +427,12 @@ button:hover {
         display: grid;
         /* grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); */
         position: relative;
-        left: .3rem;
+        left: .2rem;
         top: 15rem;
+
+
+        -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em WebKit */
+        outline: none; /* Remove o contorno ao focar */
         
 
     }
@@ -432,11 +444,13 @@ button:hover {
         position: relative;
         top: -4rem;
         margin-top: 20px;
+        
 
     }
 
     .selected-choices div {
         text-align: center;
+        
 
     }
 
@@ -485,12 +499,11 @@ button:hover {
         top: 8rem;
         border-radius: 25px;
 
+        -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em WebKit */
+        outline: none; /* Remove o contorno ao focar */
+
     }
-/* 
-    button,
-    .bto:hover {
-        transform: scale(1.05);
-    } */
+
 }
 
 
