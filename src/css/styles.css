@@ -52,7 +52,7 @@ h2 {
     font-size: 24px;
     top: 50px;
     letter-spacing: 2px;
-    
+
 }
 
 .scores {
@@ -223,7 +223,7 @@ button:hover {
         font-size: 60px;
         font-weight: bold;
         background: linear-gradient(90deg, #ff007f, #ffb200, #00ff7f, #007fff);
-        background-clip: text; 
+        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         animation: gradient-animation 5s ease infinite;
@@ -362,16 +362,18 @@ button:hover {
         font-size: 40px;
     }
 
-    .jk, .jka, .jkv {
+    .jk,
+    .jka,
+    .jkv {
         width: 15vh;
     }
 
     .choices {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .images {
-        flex-direction: column; 
+        flex-direction: column;
     }
 }
 
@@ -399,9 +401,7 @@ button:hover {
     #machine-score {
         font-size: 35px;
         position: relative;
-top: -1.3em;
-
-
+        top: -1.3em;
 
     }
 
@@ -409,6 +409,7 @@ top: -1.3em;
         display: flex;
         margin: 0 auto;
         width: 100%;
+        
 
     }
 
@@ -416,10 +417,11 @@ top: -1.3em;
     .choices {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        /* grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); */
         position: relative;
-        left: 1.5rem;
-        top: 10rem;
+        left: .3rem;
+        top: 15rem;
+        
 
     }
 
@@ -458,9 +460,10 @@ top: -1.3em;
     .jka,
     .jkv {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
         width: 11vh;
-        left: 0.5rem;
+        left: 1.9rem;
+        top: 4px;
 
     }
 
@@ -483,12 +486,14 @@ top: -1.3em;
         border-radius: 25px;
 
     }
-
+/* 
     button,
     .bto:hover {
         transform: scale(1.05);
-    }
+    } */
 }
+
+
 
 
 
